@@ -7,26 +7,15 @@
 //
 
 #import "TestLibTests.h"
+#import "TestLib.h"
 
 @implementation TestLibTests
 
-- (void)setUp
+- (void)testSimon
 {
-    [super setUp];
+    NSString * testString = @"Hello, World!";
     
-    // Set-up code here.
-}
-
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in TestLibTests");
+    STAssertEqualObjects([testString simonSays], @"Simon says: Hello, World!", @"Simon should say Hello, Hello World!");
 }
 
 @end

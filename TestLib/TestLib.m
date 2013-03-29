@@ -8,6 +8,10 @@
 
 #import "TestLib.h"
 
-@implementation TestLib
+@implementation NSString (TestLib)
+- (NSString *) simonSays {
+    return [@"Simon says: " stringByAppendingString:self];
+}
+
 
 @end

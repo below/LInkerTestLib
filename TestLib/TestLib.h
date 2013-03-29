@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TestLib : NSObject
+@interface NSString (TestLib)
+
+- (NSString *) simonSays;
 
 @end
